@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20180822 15:15:21.828">
+<suite id="s1" name="Oic Production" source="C:\development\robot-scripts\first-scripts\Tests\oic_production.robot">
+<test id="s1-t1" name="User account found">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:15:22.685" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/'.</msg>
+<status status="PASS" starttime="20180822 15:15:22.685" endtime="20180822 15:15:26.965"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:15:26.966" endtime="20180822 15:15:26.991"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>UserId</arg>
+<arg>surapon@officemate.int</arg>
+</arguments>
+<msg timestamp="20180822 15:15:26.992" level="INFO">Typing text 'surapon@officemate.int' into text field 'UserId'.</msg>
+<status status="PASS" starttime="20180822 15:15:26.992" endtime="20180822 15:15:27.287"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>Zxcv1234!</arg>
+</arguments>
+<msg timestamp="20180822 15:15:27.294" level="INFO">Typing text 'Zxcv1234!' into text field 'Password'.</msg>
+<status status="PASS" starttime="20180822 15:15:27.293" endtime="20180822 15:15:27.466"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20180822 15:15:27.467" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20180822 15:15:27.466" endtime="20180822 15:18:05.826"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>บริษัท ซีโอแอล จำกัด (มหาชน)</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:18:05.911" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:05.831" endtime="20180822 15:18:05.911"></status>
+</kw>
+<msg timestamp="20180822 15:18:05.911" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:18:05.943" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:05.828" endtime="20180822 15:18:05.943"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:15:22.684" endtime="20180822 15:18:05.944" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<test id="s1-t2" name="User account not found">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:18:05.948" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:18:26.319" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:20.299" endtime="20180822 15:18:26.320"></status>
+</kw>
+<msg timestamp="20180822 15:18:26.320" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:18:26.361" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:05.948" endtime="20180822 15:18:26.361"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:18:05.947" endtime="20180822 15:18:26.362" critical="yes">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<test id="s1-t3" name="Used Command TS009 Notfound Data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Transport/TS009</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:18:26.364" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/Transport/TS009'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:18:46.689" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:40.674" endtime="20180822 15:18:46.690"></status>
+</kw>
+<msg timestamp="20180822 15:18:46.690" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:18:46.695" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:18:26.364" endtime="20180822 15:18:46.696"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:18:26.363" endtime="20180822 15:18:46.697" critical="yes">WebDriverException: Message: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<test id="s1-t4" name="Used Command SO015">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/SaleOrder/SO015</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:18:46.704" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/SaleOrder/SO015'.</msg>
+<status status="PASS" starttime="20180822 15:18:46.704" endtime="20180822 15:19:10.249"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:19:15.835" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:19:15.411" endtime="20180822 15:19:15.835"></status>
+</kw>
+<msg timestamp="20180822 15:19:15.836" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:19:10.249" endtime="20180822 15:19:15.836"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:18:46.702" endtime="20180822 15:19:15.837" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Used Command IR009 Get Type All">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/InventoryReport/IR009</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:19:15.838" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/InventoryReport/IR009'.</msg>
+<status status="PASS" starttime="20180822 15:19:15.838" endtime="20180822 15:19:39.185"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:19:44.610" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:19:44.312" endtime="20180822 15:19:44.610"></status>
+</kw>
+<msg timestamp="20180822 15:19:44.610" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:19:39.186" endtime="20180822 15:19:44.610"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:19:15.838" endtime="20180822 15:19:44.611" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t6" name="Used Command TS008 search by Date Document">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Transport/TS008</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:19:44.614" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/Transport/TS008'.</msg>
+<status status="PASS" starttime="20180822 15:19:44.613" endtime="20180822 15:20:07.921"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:20:13.305" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:20:13.036" endtime="20180822 15:20:13.305"></status>
+</kw>
+<msg timestamp="20180822 15:20:13.306" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:20:07.926" endtime="20180822 15:20:13.306"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:19:44.613" endtime="20180822 15:20:13.306" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t7" name="Used Command TS008 search by payment type cash">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Transport/TS008</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:20:13.308" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/Transport/TS008'.</msg>
+<status status="PASS" starttime="20180822 15:20:13.308" endtime="20180822 15:20:36.730"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:20:42.114" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:20:41.824" endtime="20180822 15:20:42.114"></status>
+</kw>
+<msg timestamp="20180822 15:20:42.115" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:20:36.730" endtime="20180822 15:20:42.115"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:20:13.307" endtime="20180822 15:20:42.115" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t8" name="Used Command TS008 search by payment type credit">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Transport/TS008</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:20:42.118" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/Transport/TS008'.</msg>
+<status status="PASS" starttime="20180822 15:20:42.118" endtime="20180822 15:21:05.483"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:21:10.900" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:21:10.616" endtime="20180822 15:21:10.901"></status>
+</kw>
+<msg timestamp="20180822 15:21:10.901" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:21:05.484" endtime="20180822 15:21:10.901"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:20:42.117" endtime="20180822 15:21:10.902" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t9" name="Used Command SI002 search less than 3 months">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Invoice/SI002</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:21:10.905" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/Invoice/SI002'.</msg>
+<status status="PASS" starttime="20180822 15:21:10.905" endtime="20180822 15:21:34.213"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:21:39.591" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:21:39.293" endtime="20180822 15:21:39.591"></status>
+</kw>
+<msg timestamp="20180822 15:21:39.592" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:21:34.213" endtime="20180822 15:21:39.592"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:21:10.904" endtime="20180822 15:21:39.592" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t10" name="Used Command CC001 search by delivery date and display reptsaleId">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/CRCOnlineReport/CC001</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:21:39.595" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/CRCOnlineReport/CC001'.</msg>
+<status status="PASS" starttime="20180822 15:21:39.595" endtime="20180822 15:21:41.910"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:41.911" endtime="20180822 15:21:41.931"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>UserId</arg>
+<arg>surapon@officemate.int</arg>
+</arguments>
+<msg timestamp="20180822 15:21:41.932" level="INFO">Typing text 'surapon@officemate.int' into text field 'UserId'.</msg>
+<status status="PASS" starttime="20180822 15:21:41.932" endtime="20180822 15:21:42.063"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>Zxcv1234!</arg>
+</arguments>
+<msg timestamp="20180822 15:21:42.064" level="INFO">Typing text 'Zxcv1234!' into text field 'Password'.</msg>
+<status status="PASS" starttime="20180822 15:21:42.064" endtime="20180822 15:21:42.196"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20180822 15:21:42.197" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20180822 15:21:42.197" endtime="20180822 15:21:43.546"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/CRCOnlineReport/CC001</arg>
+</arguments>
+<msg timestamp="20180822 15:21:43.547" level="INFO">Opening url 'http://www.oic.officemate.int/CRCOnlineReport/CC001'</msg>
+<status status="PASS" starttime="20180822 15:21:43.547" endtime="20180822 15:21:43.756"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>รายงานสรุปยอดรวมระหว่าง SO และ SI ในรอบวัน (CC001)</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:43.756" endtime="20180822 15:21:43.779"></status>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>Search.IsDateDli</arg>
+</arguments>
+<msg timestamp="20180822 15:21:43.779" level="INFO">Selecting checkbox 'Search.IsDateDli'.</msg>
+<status status="PASS" starttime="20180822 15:21:43.779" endtime="20180822 15:21:43.813"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Search_SearchDateFromDli</arg>
+<arg>18/07/2018</arg>
+</arguments>
+<msg timestamp="20180822 15:21:43.814" level="INFO">Typing text '18/07/2018' into text field 'Search_SearchDateFromDli'.</msg>
+<status status="PASS" starttime="20180822 15:21:43.814" endtime="20180822 15:21:43.995"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<msg timestamp="20180822 15:21:43.996" level="INFO">Clicking button 'Search'.</msg>
+<status status="PASS" starttime="20180822 15:21:43.996" endtime="20180822 15:21:47.147"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ReptSaleID</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:47.149" endtime="20180822 15:21:47.173"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180822 15:21:47.174" endtime="20180822 15:21:49.356"></status>
+</kw>
+<status status="PASS" starttime="20180822 15:21:39.594" endtime="20180822 15:21:49.358" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Used Command IR025 Display columns [SoRemark ,Remark ,ShippingRemark,ConfirmTruck]">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/InventoryReport/IR025</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:21:49.364" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int/InventoryReport/IR025'.</msg>
+<status status="PASS" starttime="20180822 15:21:49.364" endtime="20180822 15:21:51.693"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:51.694" endtime="20180822 15:21:51.715"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>UserId</arg>
+<arg>surapon@officemate.int</arg>
+</arguments>
+<msg timestamp="20180822 15:21:51.717" level="INFO">Typing text 'surapon@officemate.int' into text field 'UserId'.</msg>
+<status status="PASS" starttime="20180822 15:21:51.715" endtime="20180822 15:21:51.857"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>Zxcv1234!</arg>
+</arguments>
+<msg timestamp="20180822 15:21:51.858" level="INFO">Typing text 'Zxcv1234!' into text field 'Password'.</msg>
+<status status="PASS" starttime="20180822 15:21:51.858" endtime="20180822 15:21:51.943"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20180822 15:21:51.944" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20180822 15:21:51.943" endtime="20180822 15:21:52.503"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/InventoryReport/IR025</arg>
+</arguments>
+<msg timestamp="20180822 15:21:52.504" level="INFO">Opening url 'http://www.oic.officemate.int/InventoryReport/IR025'</msg>
+<status status="PASS" starttime="20180822 15:21:52.504" endtime="20180822 15:21:52.839"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>รายงาน route plan ที่่ยังไม่ถูกจัดสาย (IR025)</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:52.841" endtime="20180822 15:21:52.876"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>search_SearchDeliveryDateFrom</arg>
+<arg>01/07/2018</arg>
+</arguments>
+<msg timestamp="20180822 15:21:52.877" level="INFO">Typing text '01/07/2018' into text field 'search_SearchDeliveryDateFrom'.</msg>
+<status status="PASS" starttime="20180822 15:21:52.877" endtime="20180822 15:21:53.069"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>search_SearchDeliveryDateTo</arg>
+<arg>02/07/2018</arg>
+</arguments>
+<msg timestamp="20180822 15:21:53.069" level="INFO">Typing text '02/07/2018' into text field 'search_SearchDeliveryDateTo'.</msg>
+<status status="PASS" starttime="20180822 15:21:53.069" endtime="20180822 15:21:53.193"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Search</arg>
+</arguments>
+<msg timestamp="20180822 15:21:53.193" level="INFO">Clicking button 'Search'.</msg>
+<status status="PASS" starttime="20180822 15:21:53.193" endtime="20180822 15:21:58.224"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>รหัสรถจัดส่ง</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:58.225" endtime="20180822 15:21:58.258"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>หมายเหตุภายใน</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:58.259" endtime="20180822 15:21:58.282"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>หมายเหตุ inv</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:58.282" endtime="20180822 15:21:58.303"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>หมายเหตุจัดส่ง</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:21:58.304" endtime="20180822 15:21:58.320"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180822 15:21:58.321" endtime="20180822 15:22:00.576"></status>
+</kw>
+<status status="PASS" starttime="20180822 15:21:49.361" endtime="20180822 15:22:00.577" critical="yes"></status>
+</test>
+<test id="s1-t12" name="Used Command P001 display">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:22:00.584" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:22:00.583" endtime="20180822 15:22:02.859"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:22:02.859" endtime="20180822 15:22:02.884"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>UserId</arg>
+<arg>surapon@officemate.int</arg>
+</arguments>
+<msg timestamp="20180822 15:22:02.884" level="INFO">Typing text 'surapon@officemate.int' into text field 'UserId'.</msg>
+<status status="PASS" starttime="20180822 15:22:02.884" endtime="20180822 15:22:03.022"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>Zxcv1234!</arg>
+</arguments>
+<msg timestamp="20180822 15:22:03.023" level="INFO">Typing text 'Zxcv1234!' into text field 'Password'.</msg>
+<status status="PASS" starttime="20180822 15:22:03.023" endtime="20180822 15:22:03.100"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20180822 15:22:03.101" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20180822 15:22:03.101" endtime="20180822 15:22:05.602"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Product/P001</arg>
+</arguments>
+<msg timestamp="20180822 15:22:05.603" level="INFO">Opening url 'http://www.oic.officemate.int/Product/P001'</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:32:05.626" level="FAIL">TimeoutException: Message: timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:27:05.610" endtime="20180822 15:32:05.627"></status>
+</kw>
+<msg timestamp="20180822 15:32:05.627" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: TimeoutException: Message: timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:32:05.632" level="FAIL">TimeoutException: Message: timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<status status="FAIL" starttime="20180822 15:22:05.603" endtime="20180822 15:32:05.633"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:22:00.581" endtime="20180822 15:32:05.634" critical="yes">TimeoutException: Message: timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</status>
+</test>
+<test id="s1-t13" name="Used Command SIO29 Search Data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:32:05.642" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:32:05.641" endtime="20180822 15:32:08.085"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<status status="PASS" starttime="20180822 15:32:08.086" endtime="20180822 15:32:08.106"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>UserId</arg>
+<arg>surapon@officemate.int</arg>
+</arguments>
+<msg timestamp="20180822 15:32:08.106" level="INFO">Typing text 'surapon@officemate.int' into text field 'UserId'.</msg>
+<status status="PASS" starttime="20180822 15:32:08.106" endtime="20180822 15:32:08.242"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>Password</arg>
+<arg>Zxcv1234!</arg>
+</arguments>
+<msg timestamp="20180822 15:32:08.243" level="INFO">Typing text 'Zxcv1234!' into text field 'Password'.</msg>
+<status status="PASS" starttime="20180822 15:32:08.243" endtime="20180822 15:32:08.321"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Sign In</arg>
+</arguments>
+<msg timestamp="20180822 15:32:08.321" level="INFO">Clicking button 'Sign In'.</msg>
+<status status="PASS" starttime="20180822 15:32:08.321" endtime="20180822 15:32:48.381"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the active browser instance to the provided ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int/Invoice/SI029</arg>
+</arguments>
+<msg timestamp="20180822 15:32:48.382" level="INFO">Opening url 'http://www.oic.officemate.int/Invoice/SI029'</msg>
+<status status="PASS" starttime="20180822 15:32:48.382" endtime="20180822 15:33:09.427"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>ค้นหาข้อมูล Invoice ส่งจุดให้บริการ (SI029)</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:33:14.920" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:33:14.638" endtime="20180822 15:33:14.920"></status>
+</kw>
+<msg timestamp="20180822 15:33:14.921" level="FAIL">Text 'ค้นหาข้อมูล Invoice ส่งจุดให้บริการ (SI029)' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:33:09.428" endtime="20180822 15:33:14.921"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:32:05.639" endtime="20180822 15:33:14.921" critical="yes">Text 'ค้นหาข้อมูล Invoice ส่งจุดให้บริการ (SI029)' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t14" name="Used Command SI010 search by invoice date and dellivery by Thai post">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:33:14.924" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:33:14.924" endtime="20180822 15:33:38.272"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:33:43.685" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:33:43.383" endtime="20180822 15:33:43.685"></status>
+</kw>
+<msg timestamp="20180822 15:33:43.685" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:33:38.274" endtime="20180822 15:33:43.686"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:33:14.923" endtime="20180822 15:33:43.686" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t15" name="Used Command SI007 search by all data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:33:43.689" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:33:43.689" endtime="20180822 15:34:07.015"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:34:12.479" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:34:12.195" endtime="20180822 15:34:12.479"></status>
+</kw>
+<msg timestamp="20180822 15:34:12.479" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:34:07.016" endtime="20180822 15:34:12.479"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:33:43.688" endtime="20180822 15:34:12.479" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t16" name="Used Command SO001 search data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:34:12.482" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:34:12.480" endtime="20180822 15:34:35.750"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:34:41.122" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:34:40.808" endtime="20180822 15:34:41.122"></status>
+</kw>
+<msg timestamp="20180822 15:34:41.123" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:34:35.750" endtime="20180822 15:34:41.123"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:34:12.480" endtime="20180822 15:34:41.124" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t17" name="Used Command C006 search data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:34:41.126" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:34:41.126" endtime="20180822 15:35:04.383"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:35:09.794" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:35:09.509" endtime="20180822 15:35:09.794"></status>
+</kw>
+<msg timestamp="20180822 15:35:09.795" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:35:04.384" endtime="20180822 15:35:09.795"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:34:41.125" endtime="20180822 15:35:09.796" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t18" name="Used Command SI001 search data">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://www.oic.officemate.int</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20180822 15:35:09.799" level="INFO">Opening browser 'chrome' to base url 'http://www.oic.officemate.int'.</msg>
+<status status="PASS" starttime="20180822 15:35:09.798" endtime="20180822 15:35:33.120"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Username</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180822 15:35:38.484" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180822 15:35:38.200" endtime="20180822 15:35:38.484"></status>
+</kw>
+<msg timestamp="20180822 15:35:38.484" level="FAIL">Text 'Username' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20180822 15:35:33.121" endtime="20180822 15:35:38.484"></status>
+</kw>
+<status status="FAIL" starttime="20180822 15:35:09.797" endtime="20180822 15:35:38.485" critical="yes">Text 'Username' did not appear in 5 seconds.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" starttime="20180822 15:15:21.830" endtime="20180822 15:35:38.488"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="16">Critical Tests</stat>
+<stat pass="2" fail="16">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="16" id="s1" name="Oic Production">Oic Production</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180822 15:18:05.911" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:18:26.320" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:18:46.690" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: WebDriverException: Message: chrome not reachable
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+<msg timestamp="20180822 15:32:05.627" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: TimeoutException: Message: timeout
+  (Session info: chrome=68.0.3440.106)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.14393 x86_64)
+</msg>
+</errors>
+</robot>

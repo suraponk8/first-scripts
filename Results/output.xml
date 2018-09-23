@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180923 19:19:32.201" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="C:\development\robot-scripts\first-scripts\tests\test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Test case 5">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Start Web Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:34.271" level="INFO">Start Web Test</msg>
+<status status="PASS" endtime="20180923 19:19:34.271" starttime="20180923 19:19:34.271"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:34.271" starttime="20180923 19:19:34.270"></status>
+</kw>
+<kw name="Get Selection From User" library="Dialogs">
+<doc>Pauses test execution and asks user to select a value.</doc>
+<arguments>
+<arg>Which browser?</arg>
+<arg>chrome</arg>
+<arg>ie</arg>
+<arg>firefox</arg>
+</arguments>
+<assign>
+<var>${new_browser}</var>
+</assign>
+<msg timestamp="20180923 19:19:39.158" level="INFO">${new_browser} = chrome</msg>
+<status status="PASS" endtime="20180923 19:19:39.158" starttime="20180923 19:19:34.272"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.amazon.com/</arg>
+<arg>${new_browser}</arg>
+</arguments>
+<msg timestamp="20180923 19:19:39.159" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com/'.</msg>
+<status status="PASS" endtime="20180923 19:19:45.530" starttime="20180923 19:19:39.158"></status>
+</kw>
+<kw name="Execute Manual Step" library="Dialogs">
+<doc>Pauses test execution until user sets the keyword status.</doc>
+<arguments>
+<arg>Do Something manually! It false</arg>
+</arguments>
+<status status="PASS" endtime="20180923 19:19:50.849" starttime="20180923 19:19:45.531"></status>
+</kw>
+<kw name="Pause Execution" library="Dialogs">
+<doc>Pauses test execution until user clicks ``Ok`` button.</doc>
+<status status="PASS" endtime="20180923 19:19:51.695" starttime="20180923 19:19:50.849"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180923 19:19:53.855" starttime="20180923 19:19:51.695"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>End Web Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.858" level="INFO">End Web Test</msg>
+<status status="PASS" endtime="20180923 19:19:53.859" starttime="20180923 19:19:53.858"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.859" starttime="20180923 19:19:53.857"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.860" critical="yes" starttime="20180923 19:19:34.269"></status>
+</test>
+<test id="s1-t2" name="Test case 1">
+<kw type="setup" name="Begin Web Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Start Web Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.870" level="INFO">Start Web Test</msg>
+<status status="PASS" endtime="20180923 19:19:53.870" starttime="20180923 19:19:53.869"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.871" starttime="20180923 19:19:53.868"></status>
+</kw>
+<kw name="Begin Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Start Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.874" level="INFO">Start Test</msg>
+<status status="PASS" endtime="20180923 19:19:53.875" starttime="20180923 19:19:53.874"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.875" starttime="20180923 19:19:53.873"></status>
+</kw>
+<kw name="Do Something" library="Resource">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am doing something.</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.878" level="INFO">I am doing something.</msg>
+<status status="PASS" endtime="20180923 19:19:53.878" starttime="20180923 19:19:53.878"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.879" starttime="20180923 19:19:53.877"></status>
+</kw>
+<kw name="Do Something Else" library="Resource">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I am doing something else...</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.881" level="INFO">I am doing something else...</msg>
+<status status="PASS" endtime="20180923 19:19:53.882" starttime="20180923 19:19:53.881"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.882" starttime="20180923 19:19:53.880"></status>
+</kw>
+<kw name="End Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>End Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.885" level="INFO">End Test</msg>
+<status status="PASS" endtime="20180923 19:19:53.885" starttime="20180923 19:19:53.884"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.886" starttime="20180923 19:19:53.883"></status>
+</kw>
+<kw type="teardown" name="End Web Test" library="Common">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>End Web Test</arg>
+</arguments>
+<msg timestamp="20180923 19:19:53.888" level="INFO">End Web Test</msg>
+<status status="PASS" endtime="20180923 19:19:53.889" starttime="20180923 19:19:53.888"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.889" starttime="20180923 19:19:53.887"></status>
+</kw>
+<status status="PASS" endtime="20180923 19:19:53.890" critical="yes" starttime="20180923 19:19:53.867"></status>
+</test>
+<test id="s1-t3" name="๒Test case 2">
+<status status="FAIL" endtime="20180923 19:19:53.899" critical="yes" starttime="20180923 19:19:53.897">Test case contains no keywords.</status>
+</test>
+<doc>This is some basic info about the whole suite</doc>
+<status status="FAIL" endtime="20180923 19:19:53.905" starttime="20180923 19:19:32.203"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="2">Critical Tests</stat>
+<stat fail="1" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test" pass="2">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
